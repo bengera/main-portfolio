@@ -116,7 +116,8 @@
     cursor: pointer;
     text-transform: uppercase;
     outline: none;
-    transition: background 0.3s ease-in;
+    transform: translateX(-400%);
+    transition: transform 1s ease;
 
 
     @media only screen and (max-width: $bp-medium) {
@@ -140,7 +141,13 @@
 
     }
 
+    
 
+
+  }
+
+  &__cta--button.show {
+    transform: translateX(0%);
   }
 
   &__icons {
@@ -151,12 +158,22 @@
     justify-content: flex-start;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    transform: translateX(400%);
+    transition: transform 1s ease;
+    visibility: hidden;
+    
 
     @media only screen and (max-width: $bp-medium) {
       grid-column: 5 / 9;
       justify-content: space-around;
       padding: 1rem;
     }
+
+  }
+
+  &__icons.show {
+    transform: translateX(0%);
+    visibility: visible;
   }
 
 
@@ -169,7 +186,12 @@
 .icon__wa,
 .icon__fb {
   margin-left: 2rem;
+
+  &:hover {
+    scale: 1.2;
+  }
 }
+
 
 
 .navigation {
@@ -239,6 +261,8 @@ svg {
 
     &:hover {
       fill: $color-gm;
+      scale: 1.2;
+      @include transition-basic;
 
     }
   }
@@ -247,6 +271,7 @@ svg {
 
     &:hover {
       fill: $color-wa;
+      @include transition-basic;
     }
   }
 
