@@ -33,7 +33,7 @@ body {
   grid-template-rows: minmax(100vh, 100rem) min-content; }
 
 .header {
-  background-color: #211f1f;
+  background-color: #211F1F;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   display: grid;
@@ -49,7 +49,9 @@ body {
     font-weight: 700;
     color: #FBFBFB;
     grid-column: 4 / -1;
-    grid-row: 3 / 4; }
+    grid-row: 3 / 4;
+    transform: translateX(400%);
+    transition: transform 1s ease; }
     @media only screen and (max-width: 50em) {
       .header__main {
         font-size: 7rem;
@@ -60,6 +62,8 @@ body {
       .header__main {
         font-size: 5rem;
         grid-column: 2 / -1; } }
+  .header__main.show {
+    transform: translateX(0); }
   .header__intro {
     grid-column: 4 / 8;
     grid-row: 4 / 5; }
@@ -72,11 +76,15 @@ body {
   .header__intro--text {
     font-size: 1.5rem;
     font-family: "Raleway";
-    color: #FBFBFB; }
+    color: #FBFBFB;
+    transform: translateX(-400%);
+    transition: transform 1s ease; }
     @media only screen and (max-width: 50em) {
       .header__intro--text {
         font-size: 2.5rem;
         text-align: center; } }
+  .header__intro--text.show {
+    transform: translateX(0); }
   .header__cta {
     grid-column: 4 / 5;
     grid-row: 6 / 7; }
@@ -96,7 +104,10 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     outline: none;
-    transition: background 0.3s ease-in; }
+    transform: translateX(-400%);
+    transition: transform 1s ease; }
+    .header__cta--button:active {
+      scale: 0.97; }
     @media only screen and (max-width: 50em) {
       .header__cta--button {
         width: 35.5rem;
@@ -107,21 +118,37 @@ body {
         width: 28.5rem; } }
     .header__cta--button:hover {
       background-image: linear-gradient(to right, #5A85F4, #A86BF5); }
+  .header__cta--button.show {
+    transform: translateX(0%); }
   .header__icons {
     grid-column: 4 / 5;
     grid-row: 5 / 6;
     display: flex;
     justify-content: flex-start;
     margin-top: 1rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    transform: translateX(400%);
+    transition: transform 1s ease;
+    visibility: hidden; }
     @media only screen and (max-width: 50em) {
       .header__icons {
         grid-column: 5 / 9;
         justify-content: space-around;
         padding: 1rem; } }
+  .header__icons.show {
+    transform: translateX(0%);
+    visibility: visible; }
 
-.icon__db, .icon__bh, .icon__wa, .icon__fb {
+.icon__db,
+.icon__bh,
+.icon__wa,
+.icon__fb {
   margin-left: 2rem; }
+  .icon__db:hover,
+  .icon__bh:hover,
+  .icon__wa:hover,
+  .icon__fb:hover {
+    scale: 1.2; }
 
 .navigation {
   grid-column: 8 / -1; }
@@ -158,10 +185,13 @@ svg {
   transition: all 0.3s; }
 
 .icon__gm:hover {
-  fill: #F14336; }
+  fill: #F14336;
+  scale: 1.2;
+  transition: all 0.3s; }
 
 .icon__wa:hover {
-  fill: #25D366; }
+  fill: #25D366;
+  transition: all 0.3s; }
 
 .icon__db:hover {
   fill: #E34A85;
@@ -180,6 +210,8 @@ svg {
   font-size: 0;
   margin-bottom: 5.5rem;
   grid-row: 2 / 3;
+  transform: translateX(-400%);
+  transition: transform 1s ease;
   /*&__wrap {
         grid-column: 2 / 12;
         grid-row: 2 / -1;
@@ -201,6 +233,9 @@ svg {
     padding: 5rem;
     font-weight: 600; }
 
+.work.show {
+  transform: translateX(0%); }
+
 .header-title {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
@@ -210,7 +245,8 @@ svg {
   opacity: 0.9; }
   .gallery__img:hover {
     opacity: 1;
-    transition: ease-in 0.2s; }
+    transition: ease-in 0.2s;
+    cursor: pointer; }
 
 .btn-edit {
   width: 100%;
@@ -229,7 +265,9 @@ a {
   grid-template-rows: min-content 50rem;
   min-height: 80vh;
   gap: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  transform: translateX(400%);
+  transition: transform 1s ease; }
   @media only screen and (max-width: 50em) {
     .about {
       grid-template-rows: min-content 50rem auto;
@@ -241,7 +279,7 @@ a {
   .about__heading {
     font-size: 10rem;
     grid-column: 5 / 7;
-    color: #211f1f;
+    color: #211F1F;
     padding: 2rem; }
     @media only screen and (max-width: 50em) {
       .about__heading {
@@ -262,13 +300,16 @@ a {
         font-size: 2rem;
         grid-column: 2 / 10; } }
 
+.about.show {
+  transform: translateX(0%); }
+
 @media only screen and (max-width: 50em) {
   #about-img {
     grid-column: 2 / 10;
     grid-row-start: 3; } }
 
 .footer {
-  background-color: #211f1f;
+  background-color: #211F1F;
   color: #FBFBFB;
   text-align: center;
   height: auto;
