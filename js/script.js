@@ -8,6 +8,7 @@ const buttonAnimate = document.querySelector('.header__cta--button')
 // SECTION ELEMENTS
 const workSection = document.querySelector('.work')
 const aboutSection = document.querySelector('.about')
+const headerTitleSection = document.querySelector('.header-title')
 
 
 // HEADER EVENT LISTENER
@@ -18,6 +19,8 @@ window.addEventListener('load', () => {
     iconsAnimate.classList.add('show')
     buttonAnimate.classList.add('show')
 })
+
+
 
 //WORK SECTION EVENT LISTENER
 let scrollPosition = window.scrollY;
@@ -38,16 +41,19 @@ window.addEventListener('scroll', function() {
 
 });
 
+
+
+
 function scrollWork() {
-    let workSection = document.querySelector(".work");
-    workSection.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    let headerTitleSection = document.querySelector(".header-title");
+    headerTitleSection.scrollIntoView(true);
 
     
 }
 
 function scrollAbout() {
     let aboutSection = document.querySelector(".footer"); // due to late transition
-    aboutSection.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    aboutSection.scrollIntoView(true);
 
     
 }

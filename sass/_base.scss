@@ -3,6 +3,7 @@ $color-white-primary: #FBFBFB;
 $color-white-secondary:#FFF;
 $color-black-secondary: #211F1F;
 $color-black-primary: #000;
+$color-cyan: #25e6d3;
 $color-purple: #A86BF5;
 $color-blue: #5A85F4;
 $color-bh:#0154F7;
@@ -13,6 +14,7 @@ $color-gm:#F14336;
 
 @mixin transition-basic {
   transition: all 0.3s;
+  
 }
 
 
@@ -40,6 +42,7 @@ $bp-small: 37.5em; // 600px;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   @media only screen and (max-width: $bp-large) {
     font-size: 50%;
