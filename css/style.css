@@ -7,7 +7,9 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
   @media only screen and (max-width: 62.5em) {
     html {
       font-size: 50%; } }
@@ -34,11 +36,15 @@ body {
 
 .header {
   background-color: #211F1F;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10rem 20rem min-content min-content min-content min-content 1fr;
+  grid-template-rows: 10rem 20rem repeat(4, min-content) 1fr;
   row-gap: 5px; }
   @media only screen and (max-width: 50em) {
     .header {
@@ -94,7 +100,8 @@ body {
   .header__cta--button {
     width: 20rem;
     height: 6rem;
-    background-image: linear-gradient(to right, #A86BF5, #5A85F4);
+    background: #25e6d3;
+    background: linear-gradient(90deg, #25e6d3 0%, #1a86bb 100%);
     border-radius: 1.6rem;
     border: none;
     font-family: "Poppins", "sans-serif";
@@ -105,7 +112,8 @@ body {
     text-transform: uppercase;
     outline: none;
     transform: translateX(-400%);
-    transition: transform 1s ease; }
+    transition: transform 1s ease;
+    transition: all 0.3s; }
     .header__cta--button:active {
       scale: 0.97; }
     @media only screen and (max-width: 50em) {
@@ -117,7 +125,8 @@ body {
       .header__cta--button {
         width: 28.5rem; } }
     .header__cta--button:hover {
-      background-image: linear-gradient(to right, #5A85F4, #A86BF5); }
+      scale: 1.1;
+      transition: all 0.3s; }
   .header__cta--button.show {
     transform: translateX(0%); }
   .header__icons {
@@ -143,7 +152,8 @@ body {
 .icon__bh,
 .icon__wa,
 .icon__fb {
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  transition: all 0.3s; }
   .icon__db:hover,
   .icon__bh:hover,
   .icon__wa:hover,
@@ -170,7 +180,7 @@ body {
     text-decoration: none;
     color: #FBFBFB; }
     .navigation__link:hover {
-      border-bottom: 3px solid #A86BF5;
+      border-bottom: 3px solid #25e6d3;
       color: #FBFBFB; }
 
 svg {
@@ -184,10 +194,12 @@ svg {
   fill: #1773EA;
   transition: all 0.3s; }
 
-.icon__gm:hover {
-  fill: #F14336;
-  scale: 1.2;
+.icon__gm {
   transition: all 0.3s; }
+  .icon__gm:hover {
+    fill: #F14336;
+    scale: 1.2;
+    transition: all 0.3s; }
 
 .icon__wa:hover {
   fill: #25D366;
