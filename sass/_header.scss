@@ -110,8 +110,8 @@
   &__cta--button {
     width: 20rem;
     height: 6rem;
-    background: rgb(37,230,211);
-    background: linear-gradient(90deg, rgba(37,230,211,1) 0%, rgba(26,134,187,1) 100%); 
+    background: rgb(37, 230, 211);
+    background: linear-gradient(90deg, rgba(37, 230, 211, 1) 0%, rgba(26, 134, 187, 1) 100%);
     // background-image: linear-gradient(to right, $color-purple, $color-blue);
     border-radius: 1.6rem;
     border: none;
@@ -124,7 +124,7 @@
     outline: none;
     transform: translateX(-400%);
     transition: transform 1s ease;
-    @include transition-basic;
+     @include transition-basic;
 
     &:active {
       scale: 0.97;
@@ -148,8 +148,8 @@
 
 
     &:hover {
+       
       scale: 1.1;
-      @include transition-basic;
 
     }
 
@@ -157,6 +157,8 @@
 
 
   }
+
+
 
   &__cta--button.show {
     transform: translateX(0%);
@@ -173,7 +175,7 @@
     transform: translateX(400%);
     transition: transform 1s ease;
     visibility: hidden;
-    
+
 
 
     @media only screen and (max-width: $bp-medium) {
@@ -200,8 +202,11 @@
 .icon__fb {
   margin-left: 2rem;
   @include transition-basic;
+
   &:hover {
-    scale: 1.2;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
   }
 }
 
@@ -210,7 +215,7 @@
 .navigation {
   //background-color: blue;
   grid-column: 8 / -1;
-  
+
 
   @media only screen and (max-width: $bp-medium) {
     display: none;
@@ -224,7 +229,7 @@
     justify-content: space-evenly;
     padding: 1rem;
     margin-top: 2rem;
-    
+
 
   }
 
@@ -238,12 +243,12 @@
   &__link {
     text-decoration: none;
     color: $color-white-primary;
-    
+
 
     &:hover {
       border-bottom: 3px solid $color-cyan;
       color: $color-white-primary;
-      
+
     }
   }
 }
@@ -277,7 +282,9 @@ svg {
 
     &:hover {
       fill: $color-gm;
-      scale: 1.2;
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1); 
       @include transition-basic;
 
     }
@@ -309,3 +316,5 @@ svg {
 
 
 }
+
+
