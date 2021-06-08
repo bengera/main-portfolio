@@ -10,6 +10,11 @@ const workSection = document.querySelector('.work')
 const aboutSection = document.querySelector('.about')
 const headerTitleSection = document.querySelector('.header-title')
 
+// // MODAL ELEMENTS
+// const open = document.getElementById('open')
+// const modal_container = document.getElementById('modal_container')
+// const close = document.getElementById('close')
+
 
 // HEADER EVENT LISTENER
 window.addEventListener('load', () => {
@@ -62,3 +67,10 @@ function scrollAbout() {
 //Modal
 
 
+// open.addEventListener('click', ()=>{
+//   modal_container.classList.add('show');
+// })
+
+// close.addEventListener('click', ()=>{
+//   modal_container.classList.remove('show');
+// })
