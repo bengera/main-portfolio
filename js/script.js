@@ -10,10 +10,20 @@ const workSection = document.querySelector('.work')
 const aboutSection = document.querySelector('.about')
 const headerTitleSection = document.querySelector('.header-title')
 
-// // MODAL ELEMENTS
-// const open = document.getElementById('open')
-// const modal_container = document.getElementById('modal_container')
-// const close = document.getElementById('close')
+// MOBILE-NAV ELEMENTS
+const mobileNav = document.querySelector('.mobile-nav')
+const navigationMain = document.querySelector('.navigation')
+const navLinks = document.querySelector('.navigation__link')
+
+navLinks.addEventListener('click', ()=>{
+    navigationMain.classList.remove('open');
+})
+
+
+mobileNav.addEventListener('click', () => {
+    navigationMain.classList.toggle('open');
+})
+
 
 
 // HEADER EVENT LISTENER
@@ -64,13 +74,3 @@ function scrollAbout() {
 }
 
 
-//Modal
-
-
-// open.addEventListener('click', ()=>{
-//   modal_container.classList.add('show');
-// })
-
-// close.addEventListener('click', ()=>{
-//   modal_container.classList.remove('show');
-// })
