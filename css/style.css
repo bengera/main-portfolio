@@ -236,8 +236,8 @@ body {
       height: 100vh;
       width: 100%;
       flex-direction: column;
-      clip-path: circle(100px at 90% -10%);
-      transition: all 1s ease-out;
+      clip-path: circle(100px at 90% -20%);
+      transition: all 0.5s ease-out;
       z-index: 5; }
       .navigation__list {
         flex-direction: column;
