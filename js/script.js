@@ -50,7 +50,9 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition >= 1500) {
         aboutSection.classList.add('show');
+        navigationMain.classList.remove('open');
     } 
+    
 
     
 
