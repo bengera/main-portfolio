@@ -80,9 +80,6 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 10rem 20rem repeat(4, min-content) min-content;
   row-gap: 5px; }
-  @media only screen and (max-width: 62.5em) {
-    .header {
-      grid-template-rows: 10rem 13rem repeat(4, min-content) 1fr; } }
   @media only screen and (max-width: 50em) {
     .header {
       row-gap: 10px; } }
