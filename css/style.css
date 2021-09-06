@@ -6,8 +6,6 @@
   box-sizing: inherit; }
 
 html {
-  height: 100%;
-  width: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -80,14 +78,8 @@ body {
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10rem 20rem repeat(4, min-content) 1fr;
-  row-gap: 5px;
-  width: 100vw;
-  height: 100%;
-  min-height: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  grid-template-rows: 10rem 20rem repeat(4, min-content) min-content;
+  row-gap: 5px; }
   @media only screen and (max-width: 62.5em) {
     .header {
       grid-template-rows: 10rem 13rem repeat(4, min-content) 1fr; } }
