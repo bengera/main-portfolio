@@ -15,6 +15,8 @@ const mobileNav = document.querySelector('.mobile-nav')
 const navigationMain = document.querySelector('.navigation')
 const navLinks = document.querySelector('.navigation__link')
 
+
+
 navLinks.addEventListener('click', ()=>{
     navigationMain.classList.remove('open');
 })
@@ -34,6 +36,7 @@ window.addEventListener('load', () => {
     iconsAnimate.classList.add('show')
     buttonAnimate.classList.add('show')
 })
+
 
 
 

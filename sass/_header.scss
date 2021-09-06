@@ -40,9 +40,11 @@
 
     @media only screen and (max-width: $bp-small) {
       font-size: 5rem;
-      grid-column: 2 / -1;
+      grid-column: 1 / -1;
 
     }
+
+    
   }
 
   // when show class is present translateX back to view
@@ -192,9 +194,10 @@
   }
 
 
-
-
+ 
 }
+
+
 
 .icon__db,
 .icon__bh,
