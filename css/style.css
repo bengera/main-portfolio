@@ -46,11 +46,10 @@ body {
   cursor: pointer; }
 
 .btn-primary:hover {
-  background-color: #000;
-  color: #fff; }
+  background-color: #211F1F; }
 
 .btn-primary:focus {
-  background-color: #000; }
+  background-color: #A86BF5; }
 
 .btn-secondary {
   background-color: transparent;
@@ -68,30 +67,6 @@ body {
 
 .modal-open[style] {
   padding-right: 0px !important; }
-
-.modal.fade.show {
-  padding: 15px; }
-
-@media only screen and (max-width: 50em) {
-  .modal-title {
-    font-size: 2rem; } }
-
-.mobile-nav {
-  display: none; }
-  @media only screen and (max-width: 37.5em) {
-    .mobile-nav {
-      display: block;
-      position: fixed;
-      cursor: pointer;
-      right: 5%;
-      top: 5%;
-      transform: translate(-5%, -50%);
-      z-index: 6; } }
-  .mobile-nav .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px; }
 
 .header {
   background-color: #211F1F;
@@ -222,35 +197,11 @@ body {
     /* Safari 3-8 */
     transform: scale(1.1); }
 
-@media only screen and (max-width: 50em) {
-  .navigation.open {
-    flex-direction: column;
-    clip-path: circle(1000px at 90% -10%); } }
-
 .navigation {
   grid-column: 8 / -1; }
   @media only screen and (max-width: 50em) {
     .navigation {
-      position: fixed;
-      background: #11192e;
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(100px at 90% -20%);
-      transition: all 0.5s ease-out;
-      z-index: 5; }
-      .navigation__list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; }
-      .navigation__link {
-        text-decoration: none;
-        color: #FBFBFB;
-        font-size: 10rem; }
-        .navigation__link:hover {
-          border-bottom: 3px solid #25e6d3;
-          color: #FBFBFB; } }
+      display: none; } }
   .navigation__list {
     list-style: none;
     display: flex;
