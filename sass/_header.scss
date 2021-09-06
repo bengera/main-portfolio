@@ -10,17 +10,25 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 10rem 20rem repeat(4, min-content) 1fr;
+
   row-gap: 5px;
+
+  @media only screen and (max-width: $bp-large) {
+    
+    grid-template-rows: 10rem 13rem repeat(4, min-content) 1fr;
+
+  }
 
   @media only screen and (max-width: $bp-medium) {
     row-gap: 10px;
+    
 
   }
 
   @media only screen and (max-width: $bp-small) {}
 
   &__main {
-    //background-color: green;
+    
     font-size: 8rem;
     font-family: $font-primary;
     font-weight: 700;
@@ -55,8 +63,9 @@
 
 
   &__intro {
-    //background-color: red;
+    
     grid-column: 4 / 8;
+    // grid-column: 4 / 11;
     grid-row: 4 / 5;
 
     @media only screen and (max-width: $bp-medium) {
@@ -72,6 +81,7 @@
 
   &__intro--text {
     font-size: 1.5rem;
+    // font-size: 2.2rem;
     font-family: $font-secondary;
     color: $color-white-primary;
     transform: translateX(-400%);
