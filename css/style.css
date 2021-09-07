@@ -6,6 +6,8 @@
   box-sizing: inherit; }
 
 html {
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -32,7 +34,7 @@ body {
 .contain_top {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(100vh, 100rem) min-content; }
+  grid-template-rows: minmax(60rem, 100vh) min-content; }
 
 .btn-primary,
 .btn-secondary {
