@@ -34,7 +34,7 @@ body {
 .contain_top {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(80vh, 100vh) min-content; }
+  grid-template-rows: minmax(95vh, 100vh) min-content; }
 
 .btn-primary,
 .btn-secondary {
@@ -80,7 +80,7 @@ body {
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10rem 20rem repeat(4, min-content) min-content;
+  grid-template-rows: 10rem 15rem repeat(4, min-content) min-content;
   row-gap: 5px; }
   @media only screen and (max-width: 50em) {
     .header {
