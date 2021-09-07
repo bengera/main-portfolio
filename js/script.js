@@ -22,9 +22,9 @@ navLinks.addEventListener('click', ()=>{
 })
 
 
-mobileNav.addEventListener('click', () => {
-    navigationMain.classList.toggle('open');
-})
+// mobileNav.addEventListener('click', () => {
+//     navigationMain.classList.toggle('open');
+// })
 
 
 
