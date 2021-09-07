@@ -34,7 +34,7 @@ body {
 .contain_top {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(60rem, 100vh) min-content; }
+  grid-template-rows: minmax(80vh, 100vh) min-content; }
 
 .btn-primary,
 .btn-secondary {
