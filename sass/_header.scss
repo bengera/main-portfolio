@@ -9,7 +9,7 @@
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10rem 15rem repeat(4, min-content) min-content;
+  grid-template-rows: 10rem minmax(10rem, 20rem) repeat(4, min-content) min-content;
   row-gap: 5px;
 //MEDIUM
     // width: 100vw;
