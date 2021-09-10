@@ -28,8 +28,12 @@ $font-secondary: 'Raleway';
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
-$bp-medium: 50em; // 800px;
-$bp-small: 37.5em; // 600px;
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+$bp-height-low: 38.438em; // 615px
+
+
 
 *,
 *::before,
@@ -59,7 +63,14 @@ html {
     font-size: 35%;
   }
 
+  // @media only screen and (max-width: $bp-small),
+  // only screen and (max-height: $bp-small)
+  // {
+    
+  // }
 
+
+ 
 
 
 }
@@ -152,3 +163,7 @@ body {
 .modal-open[style] {
   padding-right: 0px !important;
   }
+
+h5 {
+  font-size: 2rem;;
+}

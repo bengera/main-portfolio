@@ -70,6 +70,9 @@ body {
 .modal-open[style] {
   padding-right: 0px !important; }
 
+h5 {
+  font-size: 2rem; }
+
 .header {
   background-color: #211F1F;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg");
@@ -133,6 +136,12 @@ body {
     @media only screen and (max-width: 50em) {
       .header__cta {
         grid-column: 5 / 8; } }
+    @media only screen and (max-height: 38.438em) {
+      .header__cta {
+        margin-bottom: 50rem;
+        grid-column: 5 /7;
+        grid-row: 5 / 5;
+        margin-left: 2rem; } }
   .header__cta--button {
     width: 20rem;
     height: 6rem;
