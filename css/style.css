@@ -136,7 +136,7 @@ h5 {
     @media only screen and (max-width: 50em) {
       .header__cta {
         grid-column: 5 / 8; } }
-    @media only screen and (max-height: 38.438em) {
+    @media only screen and (max-height: 40.188em) {
       .header__cta {
         margin-bottom: 50rem;
         grid-column: 5 /7;
