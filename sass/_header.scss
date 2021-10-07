@@ -19,10 +19,7 @@
 
   }
 
-
-
-
-  //615px small screen
+ //615px small screen
 
   &__main {
 
@@ -110,7 +107,7 @@
 
 
     @media only screen and (max-width: $bp-medium) {
-      grid-column: 5 / 8;
+      grid-column: 4 / 9;
     }
 
     @media only screen and (max-height: $bp-height-low) {
@@ -160,7 +157,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-      width: 28.5rem;
+      // width: 28.5rem;
 
 
     }
