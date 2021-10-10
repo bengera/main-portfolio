@@ -438,7 +438,7 @@ h5 {
     grid-row: 6 / 7; }
     @media only screen and (max-width: 50em) {
       .header__cta {
-        grid-column: 5 / 8; } }
+        grid-column: 4 / 9; } }
     @media only screen and (max-height: 40.188em) {
       .header__cta {
         margin-bottom: 50rem;
@@ -469,9 +469,6 @@ h5 {
         width: 35.5rem;
         height: 10rem;
         font-size: 2.5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .header__cta--button {
-        width: 28.5rem; } }
     .header__cta--button:hover {
       scale: 1.1; }
   .header__cta--button.show {
