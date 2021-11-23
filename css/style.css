@@ -568,7 +568,7 @@ svg {
 
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-auto-rows: auto;
   gap: 25px;
   padding: 1rem;
@@ -580,7 +580,7 @@ svg {
   @media only screen and (max-width: 37.5em) {
     .work {
       margin-bottom: 3rem;
-      padding: 5rem;
+      padding: 2.5rem;
       gap: 50px; } }
   .work__header {
     text-align: center;
