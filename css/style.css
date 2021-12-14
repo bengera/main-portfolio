@@ -568,7 +568,7 @@ svg {
 
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-auto-rows: auto;
   gap: 25px;
   padding: 1rem;
@@ -577,6 +577,10 @@ svg {
   grid-row: 2 / 3;
   transform: translateX(-400%);
   transition: transform 1s ease; }
+  @media only screen and (min-width: 50em) {
+    .work {
+      max-width: 175rem;
+      margin: 0 auto; } }
   @media only screen and (max-width: 37.5em) {
     .work {
       margin-bottom: 3rem;

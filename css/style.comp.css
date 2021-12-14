@@ -311,8 +311,6 @@ template {
   box-sizing: inherit; }
 
 html {
-  height: 100%;
-  width: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -331,7 +329,7 @@ body {
   overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
-  max-width: 200rem; }
+  max-width: 100%; }
 
 .contain_top {
   display: grid;
@@ -570,7 +568,7 @@ svg {
 
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
   grid-auto-rows: auto;
   gap: 25px;
   padding: 1rem;
@@ -578,21 +576,11 @@ svg {
   margin-bottom: 5.5rem;
   grid-row: 2 / 3;
   transform: translateX(-400%);
-  transition: transform 1s ease;
-  /*&__wrap {
-        grid-column: 2 / 12;
-        grid-row: 2 / -1;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 5px;
-        padding: 1rem;
-
-    }*/ }
+  transition: transform 1s ease; }
   @media only screen and (max-width: 37.5em) {
     .work {
       margin-bottom: 3rem;
-      padding: 5rem;
+      padding: 2.5rem;
       gap: 50px; } }
   .work__header {
     text-align: center;
@@ -639,7 +627,6 @@ a {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: min-content 50rem;
-  min-height: 80vh;
   gap: 2rem;
   margin-bottom: 2rem;
   transform: translateX(400%);
